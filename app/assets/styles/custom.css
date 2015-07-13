@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Allan:bold', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Cardo', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url(/app/assets/img/symphony.png) repeat 0 0;
+}
+
+.well {
+  height: 100%;
+}
+
+.container-fluid {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-sizer,
+.grid-item { width: 30%; }
+
+.grid-item {
+  height: 175px;
+  float: left;
+  /*box-sizing: border-box;*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.gutter-sizer { width: 3%; }

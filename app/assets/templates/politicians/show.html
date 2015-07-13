@@ -1,0 +1,13 @@
+<div class="page-header"><h1> Top 9 Fundraisers in {{year}} </h1></div>
+<!-- <div ng-if="isEmpty">
+  Sorry, that was not an election year. Please try an even year.
+</div> -->
+
+  <div class="row">
+    <div class="col-md-4" ng-repeat ="politician in politicians">
+      <div class="well">
+        <h2><a ng-href="#/contributors/{{politician.name}}/{{year}}/{{politician.id}}">{{politician.seat.includes("federal")? (politician.name | formatName2) : (politician.name | formatName)}}</a> <show-label></show-label></h2>
+        <p>{{politician.seat.includes("federal")? (politician.name | formatName2) : (politician.name | formatName)}} raised {{politician.amount | currency}} when running for {{politician.seat | splitState}} {{politician.state | showState}}</p>
+    </div>
+    </div>
+  </div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<hmtl ng-app="PoliticiansLibrary">
+<head>
+  <title>Politicians Library</title>
+  <link rel="stylesheet" href="/app/assets/styles/custom.css">
+  <link rel="stylesheet" href="/app/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/app/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link href="http://fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <a href="#/">The politicians and their money</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#/politicians">Politicians</a></li>
+          <li><a href="#/credits">Credits</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+  <div ng-view class="container-fluid grid js-masonry"
+  data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": ".grid-sizer", "percentPosition": true, "gutter": ".gutter-sizer" }'></div>
+</body>
+<!--vendor-->
+  <script src="/app/assets/javascript/vendor/jquery-2.1.4.min.js"></script>
+  <script src="/app/bower_components/angular/angular.js"></script>
+  <script src="/app/bower_components/angular-route/angular-route.js"></script>
+  <script src="/app/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/app/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/app/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+
+
+<!--App -->
+  <script src="/app/assets/javascript/app.js"></script>
+  <script src="/app/assets/javascript/routes.js"></script>
+
+
+<!--controllers-->
+<script src="/app/assets/javascript/controllers/PoliticiansIndexController.js"></script>
+<script src="/app/assets/javascript/controllers/PoliticiansShowController.js"></script>
+<script src="/app/assets/javascript/controllers/ContributorsShowController.js"></script>
+
+<!--services-->
+<script src="/app/assets/javascript/services/politicians.js"></script>
+<script src="/app/assets/javascript/services/contributors.js"></script>
+<script src="/app/assets/javascript/services/bios.js"></script>
+
+<!--directives-->
+<script src="/app/assets/javascript/directives/showLabel.js"></script>
+
+<!--filters-->
+<script src="/app/assets/javascript/filters/splitState.js"></script>
+<script src="/app/assets/javascript/filters/formatName.js"></script>
+<script src="/app/assets/javascript/filters/formatName2.js"></script>
+<script src="/app/assets/javascript/filters/showState.js"></script>
+
+</html>
