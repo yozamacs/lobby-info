@@ -11,6 +11,10 @@ angular.module("PoliticiansLibrary").controller("ContributorsShowController",fun
   else {
     $scope.pname = $routeParams.pname
   }
-  
+
   $scope.bios = Bios.get({person: $scope.pname})
+
+  $scope.number = function(num){
+    return new Array(num);
+  };
 })

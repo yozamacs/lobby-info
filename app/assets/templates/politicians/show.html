@@ -1,7 +1,7 @@
 <div class="page-header"><h1> Top 9 Fundraisers in {{year}} </h1></div>
-<!-- <div ng-if="isEmpty">
-  Sorry, that was not an election year. Please try an even year.
-</div> -->
+<div ng-if="politicians && isEmpty()">
+  There is no data for that year. Please try a more recent year that is even.
+</div>
 
   <div class="row">
     <div class="col-md-4" ng-repeat ="politician in politicians">

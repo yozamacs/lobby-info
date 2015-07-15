@@ -1,6 +1,6 @@
 <div class="page-header"><h1> Top 9 Contributors to <a ng-href="{{bios.objects[0].link}}">{{pname}}</a> in {{year}} </h1></div>
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-9">
     <div class="grid">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="col-md-2">
+  <div class="col-md-3">
     <table class="table">
     <thead>
       <tr>
@@ -24,8 +24,8 @@
     <tr>
       <td>The people icons represent the size of the company that donated</td>
    </tr>
-      <tr><td>1-10 employees</td></tr>
-      <tr><td>11-50 employees</td></tr>
+      <tr><td>1-10 employees</td> <td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(1) track by $index" class="smallpic"></img></td></tr>
+      <tr><td>11-50 employees</td> <td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(2) track by $index" class="smallpic"></img></td></tr>
       <tr><td>51-200 employees</td></tr>
       <tr><td>201-500 employees</td></tr>
       <tr><td>501-1,000 employees</td></tr>

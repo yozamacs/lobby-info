@@ -9,12 +9,19 @@ body {
     background: url(/app/assets/img/symphony.png) repeat 0 0;
 }
 
+.smallpic {
+  width: 12px;
+}
+
+.key-table {
+  white-space: nowrap;
+}
+
 .well {
   height: 100%;
 }
 
 .container-fluid {
-  width: 1200px;
   margin: 0 auto;
 }
 
