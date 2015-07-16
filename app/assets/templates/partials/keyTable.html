@@ -1,0 +1,23 @@
+<table class="table key-table-offset">
+  <thead>
+    <tr><th class="col-md-6"><b>Key</b></th></tr>
+  </thead>
+
+  <tbody>
+    <tr><td colspan="2">The people icons represent the amount of employees who donated from that company</td></tr>
+
+    <tr><td class="table-column">1-10 employees</td> <td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(1) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">11-50 employees</td> <td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(2) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">51-200 employees</td> <td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(3) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">201-500 employees</td><td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(4) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">501-1,000 employees</td><td class="key-table"><img src="/app/assets/img/person.svg" ng-repeat="pic in number(5) track by $index" class="smallpic"></img></td></tr>
+
+    <tr><td  colspan="2">The Money icons represent the amount of money donated</td></tr>
+
+    <tr><td class="table-column">Under $10,000</td> <td class="key-table"><img src="/app/assets/img/money.svg" ng-repeat="pic in number(1) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">$10,001- $50,000</td> <td class="key-table"><img src="/app/assets/img/money.svg" ng-repeat="pic in number(2) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">$50,001 - $200,001</td> <td class="key-table"><img src="/app/assets/img/money.svg" ng-repeat="pic in number(3) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">$200,001 - $500,001</td><td class="key-table"><img src="/app/assets/img/money.svg" ng-repeat="pic in number(4) track by $index" class="smallpic"></img></td></tr>
+    <tr><td class="table-column">$500,001 - $1,000,000</td><td class="key-table"><img src="/app/assets/img/money.svg" ng-repeat="pic in number(5) track by $index" class="smallpic"></img></td></tr>
+  </tbody>
+</table>

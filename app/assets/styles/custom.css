@@ -15,6 +15,19 @@ body {
 
 .key-table {
   white-space: nowrap;
+  width: 90px;
+}
+
+.key-table-offset {
+  margin-top: 80px;
+}
+
+.table-column {
+  width: 90px;
+}
+
+.table-column2 {
+  width: 110px;
 }
 
 .well {

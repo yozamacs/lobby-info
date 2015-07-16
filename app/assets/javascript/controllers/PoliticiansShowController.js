@@ -11,5 +11,8 @@ angular.module("PoliticiansLibrary").controller("PoliticiansShowController",func
     return($scope.politicians.length===0? true : false)
   }
 
+  $scope.number = function(num){
+    return new Array(num);
+  };
 
 })
