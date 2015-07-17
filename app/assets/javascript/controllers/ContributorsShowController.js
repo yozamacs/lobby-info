@@ -19,39 +19,29 @@ angular.module("PoliticiansLibrary").controller("ContributorsShowController",fun
   };
 
   $scope.getPicNum = function(num) {
-        num = Number(num)
-    console.log(num)
-    console.log(num>100001)
-    console.log(typeof num)
-    if(num <10000) {
+    if(num <=10000) {
       return 1
     }
-    else if(num>=100001&&num<50000) {
+    else if(num>=10001&&num<=20000) {
       return 2
     }
-    else if(num>=500001&&num<200000) {
+    else if(num>=20001&&num<=50000) {
       return 3
     }
-    else if(num>=200001&&num<500000) {
+    else if(num>=50001&&num<=75000) {
       return 4
     }
-    else if(num>=500001&&num<1000000) {
+    else if(num>=75001&&num<=100000) {
       return 5
     }
-    else if(num>=1000001&&num<5000000) {
+    else if(num>=100001&&num<=250000) {
       return 6
     }
-    else if(num>=5000001&&num<10000000) {
+    else if(num>=250001&&num<=500000) {
       return 7
     }
-    else if(num>=10000001&&num<15000000) {
-      return 8
-    }
-    else if(num>=15000001&&num<20000000) {
-      return 9
-    }
     else {
-      return 10
+      return 8
     }
   }
 

@@ -4,9 +4,6 @@ angular.module("PoliticiansLibrary").controller("PoliticiansShowController",func
   });
   $scope.year = $routeParams.year;
 
-  // console.log(Object.getOwnPropertyNames($scope.politicians))
-
-  // console.log(Object.keys($scope.politicians))
   $scope.isEmpty = function(){
     return($scope.politicians.length===0? true : false)
   }
@@ -15,4 +12,7 @@ angular.module("PoliticiansLibrary").controller("PoliticiansShowController",func
     return new Array(num);
   };
 
+  $scope.search = function (item){
+    return !!((item.seat.indexOf($scope.query || '') !== -1 || item.state.indexOf($scope.query || '') !== -1));
+  }
 })

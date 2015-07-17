@@ -1,1 +1,1 @@
-angular.module("PoliticiansLibrary",['ngRoute','ngResource']);
+angular.module("PoliticiansLibrary",['ngRoute','ngResource','firebase']);

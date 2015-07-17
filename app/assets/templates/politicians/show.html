@@ -1,14 +1,19 @@
-<div class="col-md-10 col-md-offset-1">
-<div class="page-header"><h1> Top 9 Fundraisers in {{year}} </h1></div>
-<div ng-if="politicians && isEmpty()">
-  There is no data for that year. Please try a more recent year that is even.
-</div>
-
+<div class="col-md-9 col-md-offset-1">
+  <div class="page-header"><h1> Top 9 Fundraisers in {{year}} </h1></div>
+  <div ng-if="politicians && isEmpty()">
+    There is no data for that year. Please try a more recent year that is even.
+  </div>
+  <div ng-if="politicians">
+    <div class="input-group col-md-9" id="search-spacing">
+    <span class="input-group-addon" id="basic-addon1">Search Politicians</span>
+    <input type="text" ng-model="query" class="form-control">
+    </div>
+  </div>
   <div class="row">
     <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
-      <div class="grid-item" ng-repeat ="politician in politicians">
+      <div class="grid-item" ng-repeat ="politician in politicians | filter: search">
         <div class="well">
           <h2><a ng-href="#/contributors/{{politician.name}}/{{year}}/{{politician.id}}">{{politician.seat.includes("federal")? (politician.name | formatName2) : (politician.name | formatName)}}</a> <show-label></show-label></h2>
           <p>{{politician.seat.includes("federal")? (politician.name | formatName2) : (politician.name | formatName)}} raised {{politician.amount | currency}}
@@ -17,6 +22,4 @@
       </div>
     </div>
   </div>
-</div>
-
 </div>

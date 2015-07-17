@@ -1,14 +1,24 @@
 <div id="home-page row">
   <div class ="col-lg-6 col-lg-offset-3">
-  <div class="page-header">
-  <h1>{{welcome}}</h1>
-  <h3>See the top US political fundraisers by year</h3>
-  </div>
-  <div class="input-group">
-  <input class="form-control" type="text" id="year" name="title" ng-model="gov.year" placeholder="Enter a year">
-  <span class="input-group-btn">
-  <a ng-href="#/politicians/{{gov.year}}" class="btn btn-default">Go!</a>
-  </span>
-  </div>
-</div>
+    <div class="page-header">
+      <h1>{{welcome}}</h1>
+      <h3>See the top US political fundraisers by year</h3>
+    </div>
+    <div class="input-group">
+      <input class="form-control" type="text" id="year" name="title" ng-model="gov.year" placeholder="Enter a year">
+      <span class="input-group-btn">
+      <a ng-href="#/politicians/{{gov.year}}" class="btn btn-default">Go!</a>
+      </span>
+    </div>
+    <p id="paragraph-home">
+      Hi, and welcome to the politician library website!
+      <ul>
+      <li>The search bar will lead you to see the politicians who raised the most money for an election in a given year</li>
+      <li>There is no data available for years prior to 1990. Only even years are eligible as those are election years. </li>
+      <li>Currently I am displaying data from the  <a href="https://sunlightlabs.github.io/datacommons/index.html"> Sunlight Influence Explorer API.</a></li>
+      <li>I am definitely looking to expand on what data is relevant to people and conclusions people would like to see from the data. Please direct all comments and suggestions to the <a href="#/comments">comments page.</a></li>
+    </ul>
+      Thank you!
+    </p>
+    </div>
 </div>

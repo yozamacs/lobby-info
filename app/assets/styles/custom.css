@@ -34,8 +34,28 @@ body {
   height: 100%;
 }
 
+.comment-add {
+  margin-bottom: 10px;
+}
+
+.well h3 {
+  margin-top: 8px;
+}
+
 .container-fluid {
   margin: 0 auto;
+}
+
+#one-line {
+  white-space: nowrap;
+}
+
+#paragraph-home {
+  margin-top: 40px;
+}
+
+#search-spacing {
+  margin-bottom: 20px;
 }
 
 .grid-sizer,

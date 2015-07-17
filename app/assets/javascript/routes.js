@@ -22,4 +22,9 @@ angular.module("PoliticiansLibrary").config(function($routeProvider){
     .when('/credits' , {
       templateUrl: '/app/assets/templates/credits.html'
     })
+
+    .when('/comments' , {
+      templateUrl: '/app/assets/templates/comments.html',
+      controller: "CommentsShowController"
+    })
 });

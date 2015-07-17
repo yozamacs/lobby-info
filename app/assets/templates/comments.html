@@ -1,0 +1,20 @@
+<div class="col-md-6 col-md-offset-1">
+     <div ng-repeat="comment in comments" class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{comment.author || 'Anyonymous'}}</h3>
+        </div>
+        <div class="panel-body">
+            <p>{{comment.text}}</p>
+            <button ng-click="comments.$remove(comment)" class="btn btn-default" class="btn btn-default">Delete Comment</button>
+       </div>
+     </div>
+
+   </div>
+<div class="col-md-4">
+  <h3> Please let me know what you think! </h3>
+ <form ng-submit="addComment()">
+   <input ng-model="newCommentAuthor" placeholder="Your name here" class="form-control comment-add"/>
+   <textarea ng-model="newCommentText" placeholder="Your comment here" class="form-control comment-add"/>
+   <button type="submit" class="btn btn-default">Add Comment</button>
+ </form>
+</div>
