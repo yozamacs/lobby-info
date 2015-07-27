@@ -12,7 +12,9 @@ angular.module("PoliticiansLibrary").controller("ContributorsShowController",fun
     $scope.pname = $routeParams.pname
   }
 
-  $scope.bios = Bios.get({person: $scope.pname})
+  var removeMiddleName = $scope.pname.split(" ")
+  var finalName = removeMiddleName[0] + " " + removeMiddleName[removeMiddleName.length-2]
+  $scope.bios = Bios.get({person: finalName})
 
   $scope.number = function(num){
     return new Array(num);

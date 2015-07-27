@@ -8,11 +8,9 @@ angular.module("PoliticiansLibrary").controller("PoliticiansShowController",func
     return($scope.politicians.length===0? true : false)
   }
 
-  $scope.number = function(num){
-    return new Array(num);
-  };
+  // $scope.search = function (thing) {
+  //      return !!((thing.state.indexOf($scope.query || '') !== -1 || thing.seat.indexOf($scope.query || '') !== -1));
+  //  };
 
-  $scope.search = function (item){
-    return !!((item.seat.indexOf($scope.query || '') !== -1 || item.state.indexOf($scope.query || '') !== -1));
-  }
+
 })

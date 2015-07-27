@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
+  "name": "PoliticiansLibrary",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
+  "description": "Information about the top fundraising politicians since the 1990's",
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
