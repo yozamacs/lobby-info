@@ -1,7 +1,6 @@
 angular.module("PoliticiansLibrary").controller("ContributorsShowController",function(Contributors,Bios,$scope,$routeParams){
 
   $scope.contributors = Contributors.getJSONP({year: $routeParams.year, cont_id: $routeParams.cont_id});
-    console.log($scope.contributors)
   $scope.year = $routeParams.year
 
   if($routeParams.pname.includes("(R)")) {
