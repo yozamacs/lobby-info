@@ -1,5 +1,7 @@
 angular.module("PoliticiansLibrary").controller("ContributorsShowController",function(Contributors,Bios,$scope,$routeParams){
+
   $scope.contributors = Contributors.getJSONP({year: $routeParams.year, cont_id: $routeParams.cont_id});
+    console.log($scope.contributors)
   $scope.year = $routeParams.year
 
   if($routeParams.pname.includes("(R)")) {
@@ -46,5 +48,9 @@ angular.module("PoliticiansLibrary").controller("ContributorsShowController",fun
       return 8
     }
   }
+
+  $scope.search = function (row) {
+       return !!((row.name.indexOf($scope.query || '') !== -1 || row.total_amount.indexOf($scope.query || '') !== -1));
+   };
 
 })
